@@ -13,7 +13,7 @@ public:
             reverse(A.begin(), A.end());
             return ;
         }
-        for(int i = n-1; i>=ind; i--){
+        for(int i = n-1; i>ind; i--){
             if(A[i] > A[ind]){
                 swap(A[i], A[ind]);
                 break;
