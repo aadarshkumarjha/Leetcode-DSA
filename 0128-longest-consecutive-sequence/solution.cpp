@@ -9,10 +9,10 @@ public:
             st.insert(arr[i]);
         }
         for(auto it:st){
-            if(st.find(it-1) == st.end()){
+            if(st.find(it-1) == st.end()){ //to check if previous el is present
                 int cnt = 1;
                 int x = it;
-                while(st.find(x+1) != st.end()){
+                while(st.find(x+1) != st.end()){ //count consecutive number
                     x = x+1;
                     cnt += 1;
                 }
